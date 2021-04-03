@@ -11,6 +11,7 @@ Battleship Game with simple Console UI.
 - Flattening layers - no dedicated UI or presentation layer. No infrastructure layer.
 - UI is as simple as possible.
 - No external libraries for validation, dependency injection container etc. Application is really simple.
+- No desing patterns like State pattern for managing ship state or abstract factory for creating ships. I decided that level of complication is too low for that.
 - Domain logic is based on https://www.hasbro.com/common/instruct/Battleship.PDF. Ubiquitous language used from this document (Holes, Pegs, Coordinate, TargetGrid, OceanGrid etc).
 - Coordinate type consists of two equivalent objects CoordinateValue and CoordinateIndexes. It was much easier to create and manipulate coordinates with them. Coordinate types ensures that both of them point to the same location.
     - CoordinateValue - value presented on UI (eg "A1"). User creates such coordinate when entering a shot location.
